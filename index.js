@@ -5,6 +5,9 @@
 const express = require("express");
 const msal = require('@azure/msal-node');
 
+const test = process.env.TEST;
+console.log(test);
+
 const clientId = process.env.CLIENT_ID;
 const authority = process.env.AUTHORITY;
 const clientSecret = process.env.CLIENT_SECRET; 
